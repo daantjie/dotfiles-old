@@ -10,3 +10,12 @@ Warning!
 
 Since I have transitioned from vim to emacs (thanks to EVIL),
 I will no longer be updating those config files. Sorry!
+
+Quick install
+-------------
+
+```bash
+git clone https://github.com/danieloosthuizen/dotfiles.git &
+cd dotfiles &
+./install.sh
+```
