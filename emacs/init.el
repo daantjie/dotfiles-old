@@ -162,6 +162,7 @@ packages))
 (global-undo-tree-mode)
 
 (require 'magit)
+(global-set-key (kbd "C-x G") 'magit-status)
 
 (add-to-list 'load-path
               "~/.emacs.d/plugins/yasnippet")
