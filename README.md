@@ -20,4 +20,4 @@ cd dotfiles &
 ./install.sh
 ```
 
-*Warning:* untested.
+**Warning:** untested.
