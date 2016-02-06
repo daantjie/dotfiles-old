@@ -19,3 +19,5 @@ git clone https://github.com/danieloosthuizen/dotfiles.git &
 cd dotfiles &
 ./install.sh
 ```
+
+*Warning:* untested.
