@@ -1,11 +1,11 @@
 					; My .emacs file. /daniel-oosthuizen
 
-* Tasks
-** DONE Get relative line numbers
-   CLOSED: [2016-02-05 Fri 21:50]
-** TODO Find how to undefine EVIL keymappings
-** TODO Figure out how to easily embed Org Mode in other code
-* Code
+;; * Tasks
+;; ** DONE Get relative line numbers
+;;    CLOSED: [2016-02-05 Fri 21:50]
+;; ** TODO Find how to undefine EVIL keymappings
+;; ** TODO Figure out how to easily embed Org Mode in other code
+;; * Code
 
 
 ;;; =============== Package ===============
