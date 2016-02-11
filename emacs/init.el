@@ -61,6 +61,7 @@ packages))
 			    'nyan-mode
 			    'linum-relative
 			    'rainbow-delimiters
+			    'fill-column-indicator
 			 ;; Editing
 			    'paredit
 			    'multiple-cursors
@@ -200,6 +201,13 @@ packages))
 (nyan-start-animation)
 
 (require 'badwolf-theme)
+
+(require 'fill-column-indicator)
+(setq fci-rule-column 80)
+(setq fci-rule-width 1)
+(setq fci-rule-color "gray")
+(define-globalized-minor-mode global-fci-mode fci-mode (lambda () (fci-mode 1)))
+(global-fci-mode 1)
 
 
 ;;; ==================== Lisp ====================
