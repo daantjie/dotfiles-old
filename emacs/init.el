@@ -251,10 +251,10 @@ packages))
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(font-latex-bold-face ((t nil)))
+ ;;'(font-latex-bold-face ((t nil)))
  '(font-latex-doctex-documentation-face ((t nil)))
  '(font-latex-doctex-preprocessor-face ((t nil)))
- '(font-latex-italic-face ((t nil)))
+ ;;'(font-latex-italic-face ((t nil)))
  '(font-latex-math-face ((t nil)))
  '(font-latex-sectioning-0-face ((t nil)))
  '(font-latex-sectioning-1-face ((t nil)))
