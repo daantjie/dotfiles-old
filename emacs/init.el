@@ -290,7 +290,11 @@ packages))
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+
 ;;; Misc.
+
+
 ;; Disabling annoying things about Emacs
 (when (boundp 'scroll-bar-mode)
   (scroll-bar-mode -1))
@@ -306,6 +310,12 @@ packages))
 
 (setq inhibit-startup-screen t)
 
+(put 'set-goal-column 'disabled nil)
+(put 'narrow-to-region 'disabled nil)
+(put 'upcase-region 'disabled nil)
+(put 'downcase-region 'disabled nil)
+(put 'scroll-left 'disabled nil)
+(put 'erase-buffer 'disabled nil)
 
 ;;; =============== Deprecated ===============
 
