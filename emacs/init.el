@@ -13,8 +13,6 @@
 
 (require 'package)
 
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/emacs-livedown"))
-
 (add-to-list 'package-archives
 	     '("org" . "http://orgmode.org/elpa/"))
 (add-to-list 'package-archives
@@ -244,7 +242,6 @@ packages))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
 
-(require 'livedown)
 
 ;;; =============== Tex ===============
 
