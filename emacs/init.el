@@ -292,6 +292,18 @@ packages))
  )
 
 
+;;; ==================== Email ====================
+
+
+(setq smtpmail-default-smtp-server "smtpserver") ; needs to be specified before the (require)
+(require 'smtpmail)
+(setq send-mail-function 'smtpmail-send-it)
+(setq message-send-mail-function 'smtpmail-send-it)
+(setq user-full-name "Daniel Oosthuizend")
+(setq smtpmail-local-domain "gmail.com")
+(setq user-mail-address (concat "danieltheexperimenter@" smtpmail-local-domain))
+
+
 ;;; Misc.
 
 
