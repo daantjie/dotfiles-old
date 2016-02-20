@@ -304,7 +304,7 @@ packages))
 (setq user-mail-address (concat "danieltheexperimenter@" smtpmail-local-domain))
 
 
-;;; Misc.
+;;; Improving Emacs' default behaviour!
 
 
 ;; Saves (because I was bitten!)
@@ -315,9 +315,7 @@ packages))
   kept-old-versions 2
   version-control t)
 
-
-
-;; Disabling annoying things about Emacs
+;; Scrolling
 (when (boundp 'scroll-bar-mode)
   (scroll-bar-mode -1))
 (menu-bar-mode -1)
@@ -330,14 +328,23 @@ packages))
 (setq-default scroll-up-aggressively 0.01
     scroll-down-aggressively 0.01)
 
+;; Startup Screen
 (setq inhibit-startup-screen t)
 
+;; Default frame size
+(when window-system (set-frame-width (selected-frame) 82))
+
+;; No tabs! (Tabs are Evil)
+(setq-default indent-tabs-mode nil)
+
+;; Allow 'confusing' commands
 (put 'set-goal-column 'disabled nil)
 (put 'narrow-to-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
 (put 'scroll-left 'disabled nil)
 (put 'erase-buffer 'disabled nil)
+
 
 ;;; =============== Deprecated ===============
 
