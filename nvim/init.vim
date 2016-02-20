@@ -72,7 +72,7 @@
   NeoBundle 'terryma/vim-multiple-cursors'
   " NeoBundle 'ctrlpvim/ctrlp.vim'
   " NeoBundle 'christoomey/vim-tmux-navigator'
-  NeoBundle 'vim-airline/vim-airline'
+  " NeoBundle 'vim-airline/vim-airline'
   NeoBundle 'tpope/vim-surround'
   NeoBundle 'sjl/gundo.vim'
   " NeoBundle 'tomtom/tcomment_vim'
@@ -130,9 +130,9 @@
     set tabstop=2 softtabstop=2 expandtab shiftwidth=2
 
   " Airline
-    set guifont=Ubuntu\ Mono\ derivative\ Powerline:h20
-    let g:airline#extensions#tabline#enabled = 1
-    let g:airline_powerline_fonts = 1
+    " set guifont=Ubuntu\ Mono\ derivative\ Powerline:h20
+    " let g:airline#extensions#tabline#enabled = 1
+    " let g:airline_powerline_fonts = 1
     set laststatus=2
 " }}}
 " Mappings {{{
