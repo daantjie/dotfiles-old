@@ -336,6 +336,7 @@ packages))
 
 ;; No tabs! (Tabs are Evil)
 (setq-default indent-tabs-mode nil)
+(setq-default c-basic-offset 4)
 
 ;; Allow 'confusing' commands
 (put 'set-goal-column 'disabled nil)
