@@ -77,6 +77,21 @@ packages))
 (require 'evil)
 (evil-mode t)
 
+(defun my-jk ()
+  (interactive)
+  (let* ((initial-key ?j)
+         (final-key ?k)
+         (timeout 0.5)
+         (event (read-event nil nil timeout)))
+    (if event
+        ;; timeout met
+        (if (and (characterp event) (= event final-key))
+            (evil-normal-state)
+          (insert initial-key)
+          (push event unread-command-events))
+      ;; timeout exceeded
+      (insert initial-key))))
+
 ;; Remap 'jl' to escape from insert mode
 (defun my-jl ()
   (interactive)
@@ -94,6 +109,7 @@ packages))
       (insert initial-key))))
 
 (define-key evil-insert-state-map (kbd "j") 'my-jl)
+(define-key evil-insert-state-map (kbd "j") 'my-jk)
 (defadvice
     evil-search-forward
     (after evil-search-forward-recenter activate)
@@ -169,6 +185,9 @@ packages))
               "~/.emacs.d/plugins/yasnippet")
 (require 'yasnippet)
 (yas-global-mode 1)
+
+(require 'evil-surround)
+(global-evil-surround-mode 1)
 
 
 ;;; =============== Eyecandy ===============
