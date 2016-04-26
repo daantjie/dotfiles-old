@@ -1,5 +1,8 @@
-My dotfiles
+My OLD dotfiles
 ===========
+
+You should be looking at [my new dotfiles.](https://github.com/danieloosthuizen/dotfiles)
+
 
 These are my personal dotfiles; you are very welcome to peruse
 them, and take from them what you wish. However, I give no
